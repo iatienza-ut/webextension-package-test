@@ -1,0 +1,42 @@
+{
+  "name": "webextension-package-test",
+  "version": "1.0.0",
+  "description": "Npm package test for use it in a webextension",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-clean": "rm -rf dist/*",
+    "build-bg": "rollup -i src/bg.js -o dist/bg.js -f es",
+    "build-cs": "rollup -i src/cs.js -o dist/cs.js -f es",
+    "build": "npm run build-clean && npm run build-bg && npm run build-cs && cp src/index.js dist/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibaiatienza/webextension-package-test.git"
+  },
+  "keywords": [
+    "webextension",
+    "npm",
+    "test",
+    "package"
+  ],
+  "author": {
+    "name": "Ibai Atienza Bilbao",
+    "email": "iatienza@userzoom.com",
+    "url": "https://www.userzoom.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibaiatienza/webextension-package-test/issues",
+    "email": "mobileteam@userzoom.com"
+  },
+  "homepage": "https://github.com/ibaiatienza/webextension-package-test#readme",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "devDependencies": {
+    "rollup": "^0.56.4",
+    "rollup-plugin-node-resolve": "^3.0.3"
+  }
+}
