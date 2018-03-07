@@ -11,7 +11,7 @@
     "build": "npm run build-clean && npm run build-bg && npm run build-cs && cp src/index.js dist/.",
     "preversion": "echo 'preversion'",
     "version": "npm run build && git add -A dist",
-    "postversion": "git push && git push --tags"
+    "postversion": "echo 'hello version %s' && git push && git push --tags"
   },
   "repository": {
     "type": "git",
