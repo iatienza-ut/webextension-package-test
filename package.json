@@ -8,7 +8,10 @@
     "build-clean": "rm -rf dist/*",
     "build-bg": "rollup -i src/bg.js -o dist/bg.js -f es",
     "build-cs": "rollup -i src/cs.js -o dist/cs.js -f es",
-    "build": "npm run build-clean && npm run build-bg && npm run build-cs && cp src/index.js dist/."
+    "build": "npm run build-clean && npm run build-bg && npm run build-cs && cp src/index.js dist/.",
+    "preversion": "echo 'preversion'",
+    "version": "echo 'version'",
+    "postversion": "echo 'postversion'"
   },
   "repository": {
     "type": "git",
