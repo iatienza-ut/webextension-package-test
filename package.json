@@ -10,8 +10,8 @@
     "build-cs": "rollup -i src/cs.js -o dist/cs.js -f es",
     "build": "npm run build-clean && npm run build-bg && npm run build-cs && cp src/index.js dist/.",
     "preversion": "echo 'preversion'",
-    "version": "echo 'version'",
-    "postversion": "echo 'postversion'"
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
