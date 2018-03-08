@@ -35,11 +35,13 @@
   },
   "homepage": "https://github.com/ibaiatienza/webextension-package-test#readme",
   "files": [
-    "README.md",
     "dist"
   ],
   "devDependencies": {
     "rollup": "^0.56.4",
     "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "dependencies": {
+    "redux-webext": "^1.1.2"
   }
 }
