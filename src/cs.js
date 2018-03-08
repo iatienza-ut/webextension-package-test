@@ -1,5 +1,5 @@
 import log from './lib/log';
-import { capitalize } from 'lodash-es';
+import { default as capitalize } from 'lodash-es/capitalize';
 
 const cslog = () => {
   log(capitalize('CONTENT SCRIPT'));
