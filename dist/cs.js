@@ -1,4 +1,4 @@
-import { capitalize } from 'lodash-es';
+import capitalize from 'lodash-es/capitalize';
 
 const log = (msg) => {
   console.log('BRANCH CHANGE', msg);
