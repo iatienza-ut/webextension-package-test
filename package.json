@@ -1,6 +1,6 @@
 {
   "name": "webextension-package-test",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Npm package test for use it in a webextension",
   "main": "./src/index.js",
   "scripts": {
